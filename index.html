@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Benjamin Moore</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media_query.css">
+    <link rel="stylesheet" href="js/swiper-5.2.1/package/css/swiper.min.css">
+
+    <script src="js/swiper-5.2.1/package/js/swiper.min.js"></script>
+    <script src="lib/jquery-1.11.1.min.js"></script>
+    <script src="lib/jquery.easing.1.3.js"></script>
+    <script src="js/even.js"></script>
+    <script src="js/mainmenu.js"></script>
+    <script src="js/main_effect.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/topbtn.js"></script>
+</head>
+<body>
+   
+<!--헤더영역-->
+    <div id="header_wrap">
+        <header>
+            <h1 id="logo"><a href="#"><img src="images/nav_logoW.png" alt="메인로고"></a></h1>
+            <nav id="main_nav">
+                <ul id="main_menu">
+                    <li>
+                        <a href="#">브랜드</a>
+                        <ol>
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">히스토리</a></li>
+                            <li><a href="#">친환경 마크</a></li>
+                        </ol>
+                    </li>
+
+                    <li>
+                        <a href="#">제품구매</a>
+                        <ol>
+                            <li><a href="#">페인트</a></li>
+                            <li><a href="#">작업도구</a></li>
+                            <li><a href="#">컬러 팬텍</a></li>
+                            <li><a href="#">DIY 세트</a></li>
+                        </ol>
+                    </li>
+
+                    <li>
+                        <a href="#">시공신청</a>
+                        <ol>
+                            <li><a href="#">서비스 소개</a></li>
+                            <li><a href="#">서비스 신청</a></li>
+                            <li><a href="#">시공 사례</a></li>
+                        </ol>
+                    </li>
+
+                    <li>
+                        <a href="#">게시판</a>
+                        <ol>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">질문사항</a></li>
+                            <li><a href="#">제품 리뷰</a></li>
+                        </ol>
+                    </li>
+
+                    <li>
+                        <a href="#">고객센터</a>
+                    </li>
+                </ul>
+            </nav>
+
+<!--햄버거버튼-->
+
+            <h2 id="toggle_btn">
+                <a href="#">
+                <span class="t_stick"></span>
+                <span class="m_stick"></span>
+                <span class="b_stick"></span>
+                </a>
+            </h2>
+        </header>
+
+<!--모바일메뉴-->
+
+        <nav id="mobile_menu">
+            <ul id="toggle_menu">
+                <li>
+                    <a href="#">브랜드</a>
+                    <ul class="toggle_sub">
+                        <li><a href="#">인사말</a></li>
+                        <li><a href="#">히스토리</a></li>
+                        <li><a href="#">친환경 마크</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">제품구매</a>
+                    <ul class="toggle_sub">
+                        <li><a href="#">페인트</a></li>
+                        <li><a href="#">작업도구</a></li>
+                        <li><a href="#">컬러 팬텍</a></li>
+                        <li><a href="#">DIY 세트</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">시공신청</a>
+                    <ul class="toggle_sub">
+                        <li><a href="#">서비스 소개</a></li>
+                        <li><a href="#">서비스 신청</a></li>
+                        <li><a href="#">시공 사례</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">게시판</a>
+                    <ul class="toggle_sub">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">질문사항</a></li>
+                        <li><a href="#">제품 리뷰</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">고객센터</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <!--메인 비주얼 영역-->
+    <div id="main_vis">
+        <ul id="main_list">
+            <li>
+                <img src="images/main_vis_00.jpg" alt="삼성전자 X 벤자민무어 취향을 완성하는 나만의 컬러 삼성전자 라이프스타일 쇼룸에서 선보이는 컬러 세미나에 여러분들을 초대합니다."></li>
+            <li>
+                <img src="images/main_vis_01.jpg" alt="벤자민무어의 프리미엄 시공 연계 서비스 프리미엄 시공 연계 서비스는 믿을 수 있는 제품으로, 최상의 결과물을 내기 위해 노력합니다."></li>
+            <li>
+                <img src="images/main_vis_02.jpg" alt="2020년 벤자민무어가 추천하는 올해의 컬러를 만나보세요. COLOR TRENDS 2020 카탈로그를 다운받으시면, 벤자민무어가 제안하는 인테리어 트렌드를 보실 수 있습니다."></li>
+        </ul>
+
+        <!--비주얼버튼-->
+
+        <span id="prev_btn">&lt;</span>
+        <span id="next_btn">&gt;</span>
+    </div>
+    
+    <div id="mobile_main_vis">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/mobile_main_vis_00.jpg" alt="삼성전자 X 벤자민무어 삼성전자 라이프스타일 쇼룸에서 선보이는 컬러 세미나에 여러분들을 초대합니다."></div>
+                <div class="swiper-slide"><img src="images/mobile_main_vis_01.jpg" alt="벤자민무어의 프리미엄 시공 연계 서비스 프리미엄 시공 연계 서비스는 믿을 수 있는 제품으로, 최상의 결과물을 내기 위해 노력합니다."></div>
+                <div class="swiper-slide"><img src="images/mobile_main_vis_02.jpg" alt="2020년 올해의 컬러를 만나보세요 COLOR TRENDS 2020 카탈로그를 다운받으시면, 벤자민무어가 제안하는 인테리어 트렌드를 보실 수 있습니다."></div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+    
+    
+
+    <!--서브 콘텐츠1 (브랜드 소개)-->
+    <div id="sub1_wrap">
+        <section id="sub1">
+            <h2 class="cont_tit"><a href="#">브랜드 소개</a></h2>
+            <div id="sub1_inner">
+                <a href="#"><img id="sub1_img" src="images/brand_logo.png" alt="브랜드 로고"></a>
+                <p id="sub1_txt">벤자민무어는 1883년 뉴욕에서 설립된 세계 최대 페인트 제조 업체로,<br>
+                    1세기가 넘는 기간 동안 쌓은 기술력을 제공합니다.<br>
+                    2000년도부터 웨렌버핏의 '버크셔 헤서웨이(Berkshire Hathaway)' 계열사로서<br>
+                    끊임없는 투자를 받아 최고급 페인트를 개발하는 페인트 업계 선두주자로 자리매김 했습니다.<br>
+                    국내에는 1996년 런칭하여 친환경 페인트 산업을 주도하였으며,<br>
+                    대형 프로젝트를 통해 꾸준한 성과를 만들고 성장하고 있습니다.
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <!--서브 콘텐츠2 (아이콘 영역)-->
+    <div id="sub2_wrap">
+        <section id="sub2">
+            <ul id="icon_list">
+                <li>
+                    <a href="#"><img src="images/icon_01.png" alt="환경 아이콘"></a>
+                    <p class="icon_tit">환경을 생각하는 브랜드</p>
+                    <p class="icon_txt">암을 유발하는 VOCs물질을 생성하지 않는 페인트를 <br> 개발해 사람과 환경 모두를 생각하는<br> 제품을 제공하고 있습니다.</p>
+                </li>
+                <li>
+                    <a href="#"><img src="images/icon_02.png" alt="약속 아이콘"></a>
+                    <p class="icon_tit">고객과의 약속</p>
+                    <p class="icon_txt">건강, 퀄리티, 신뢰성 이 세가지를 약속하는<br> Green Promise의 가치를 엄격히 지켜나가겠습니다.</p>
+                </li>
+                <li>
+                    <a href="#"><img src="images/icon_03.png" alt="제품 아이콘"></a>
+                    <p class="icon_tit">제품의 다양성</p>
+                    <p class="icon_txt">매년 유행하는 컬러를 소개하고, 컬러 컨설팅을 통해<br> 보다 쉽게 다양한 색상 조합을 만들 수 있습니다.</p>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <!--서브 콘텐츠3 (제품 리스트)-->
+    <div id="sub3_wrap">
+        <section id="sub3">
+            <h2 class="cont_tit"><a href="#">제품 목록</a></h2>
+
+            <span id="pro_prebtn" class="prev"><a href="#">&lt;</a></span>
+            <span id="pro_nextbtn" class="naxt"><a href="#">&gt;</a></span>
+
+            <ul id="product_list">
+                <li>
+                    <a href="#"><img src="images/product_01.gif" alt="스테이클리어 바니쉬 고광 상품 보러가기"></a>
+                    <p class="pro_title">스테이클리어 바니쉬 고광</p>
+                    <p class="pro_txt">실내, 표면보호, 투명 코딩제</p>
+                    <p class="pro_price">17,000원</p>
+                </li>
+
+                <li>
+                    <a href="#"><img src="images/product_02.gif" alt="아보코트 반투명 스테인 상품 보러가기"></a>
+                    <p class="pro_title">아보코트 반투명 스테인</p>
+                    <p class="pro_txt">75가지 컬러, 원목보호, UV차단</p>
+                    <p class="pro_price">16,000원</p>
+                </li>
+
+                <li>
+                    <a href="#"><img src="images/product_03.gif" alt="아보코트 투명 스테인 상품 보러가기"></a>
+                    <p class="pro_title">아보코트 투명 스테인</p>
+                    <p class="pro_txt">원목보호, UV차단, 만족도 1위</p>
+                    <p class="pro_price">15,000원</p>
+                </li>
+
+                <li>
+                    <a href="#"><img src="images/product_04.gif" alt="아보코트 불투명 스테인 상품 보러가기"></a>
+                    <p class="pro_title">아보코트 불투명 스테인</p>
+                    <p class="pro_txt">4,000가지 컬러, 원목보호</p>
+                    <p class="pro_price">105,000원</p>
+                </li>
+
+                <li>
+                    <a href="#"><img src="images/product_05.gif" alt="벤 무광 상품 보러가기"></a>
+                    <p class="pro_title">벤 무광</p>
+                    <p class="pro_txt">벽지벽면, 천장, 합리적 가격</p>
+                    <p class="pro_price">25,700원</p>
+                </li>
+
+                <li>
+                    <a href="#"><img src="images/product_06.gif" alt="벤 에그쉘광 상품 보러가기"></a>
+                    <p class="pro_title">벤 에그쉘광</p>
+                    <p class="pro_txt">벽지벽면, 합리적 가격</p>
+                    <p class="pro_price">27,700원</p>
+                </li>
+
+                <li>
+                    <a href="#"><img src="images/product_07.gif" alt="리갈 셀렉트 펄광 상품 보러가기"></a>
+                    <p class="pro_title">리갈 셀렉트 펄광</p>
+                    <p class="pro_txt">방문, 가구, 빠른건조</p>
+                    <p class="pro_price">39,000원</p>
+                </li>
+
+                <li>
+                    <a href="#"><img src="images/product_08.gif" alt="리갈 하이빌드 저광 상품 보러가기"></a>
+                    <p class="pro_title">리갈 하이빌드 저광</p>
+                    <p class="pro_txt">실내외, 현관문, 강한 내구성</p>
+                    <p class="pro_price">39,000원</p>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <!--이벤트 배너 영역-->
+    <div id="event_wrap">
+        <div id="event_txt_box">
+            <p><a href="#">벤자민무어 '오늘의 집' 입점 기념 이벤트</a></p>
+            <span>댓글 이벤트 당첨자 50분께 썸머 굿즈를 드립니다.</span>
+        </div>
+    </div>
+
+    <!--서브 콘텐츠4 (리뷰 영역)-->
+    <div id="sub4_wrap">
+        <section id="sub4">
+            <h2 class="cont_tit"><a href="#">제품 리뷰</a></h2>
+
+            <div id="sub4_left">
+                <div id="sub4_img1" class="re_group">
+                    <a href="#">
+                        <div class="info">
+                            <span>컬러 정보 : Simply White OC-117</span>
+                            <p>어느 공간이나 부담없이 적용할 수 있는 화이트 입니다.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div id="sub4_img2" class="re_group">
+                    <a href="#">
+                        <div class="info">
+                            <span>컬러 정보 : Tarrytown Green HC-134</span>
+                            <p>깊고 풍부함 속에 공간을 차분하게 만듭니다.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div id="sub4_img3" class="re_group">
+                    <a href="#">
+                        <div class="info">
+                            <span>컬러 정보 : Thunder AF-685</span>
+                            <p>어디든 조화롭게 어우러지는 그레이로 공간에 안정감을 줍니다.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div id="sub4_right">
+                <div id="sub4_img4" class="re_group">
+                    <a href="#">
+                        <div class="info">
+                            <span>컬러 정보 : Chrome Green PM-10</span>
+                            <p>고급스럽고 차분한 톤 다운된 그린 컬러입니다.<br>
+                            튀지않는 컬러감으로 도전해보시길 추천드립니다.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <!--서브 콘텐츠5 (매장 안내)-->
+    <div id="sub5_wrap">
+        <section id="sub5">
+            <div id="loc_txtbox">
+                <p id="location_tit">벤자민무어 오프라인 매장 안내</p>
+                <p id="location_txt">매장에서 직접 보고 컬러 카탈로그도 받아가세요</p>
+                <a href="#"><img id="location_icon" src="images/location_icon.png" alt="장소 안내"></a>
+            </div>
+        </section>
+
+        <!--서브5 팝업창-->
+        <div id="store_bg">
+            <div id="popup">
+                <span><img src="images/close_btn.png" alt="닫기"></span>
+                <p id="title"><a href="#">매장안내</a></p>
+                <div id="store_img"></div>
+                <div id="store_info">
+                    <h1>벤자민무어 논현 본점</h1>
+                    <ul>
+                        <li>
+                            <span class="store_tit">매장 주소</span>
+                            <span>서울특별시 강남구 논현로 127길 22</span>
+                        </li>
+
+                        <li>
+                            <span class="store_tit">영업시간</span>
+                            <span>월-금: AM 8:00 ~ PM 07:30<br>
+                                토 : AM 09:00 ~ PM 07:30 (일요일 휴무) </span>
+                        </li>
+
+                        <li>
+                            <span class="store_tit">전화번호</span>
+                            <span>1577 - 3103</span>
+                        </li>
+
+                        <li>
+                            <span class="store_tit">팩스번호</span>
+                            <span>02-3473-5055</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="store_map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.7914899178095!2d127.02701481565836!3d37.512835679807964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3efd66b7adb%3A0x6e38b71bdf25d7c2!2z67Kk7J6Q66-866y07Ja0IOuFvO2YhOuzuOygkA!5e0!3m2!1sko!2skr!4v1586171564464!5m2!1sko!2skr" title="매장 위치안내" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--푸터 영역-->
+    <div id="footer_wrap">
+        <footer>
+            <ul id="footer_icon_list">
+                <li>
+                    <a href="https://www.pinterest.co.kr/benjaminmoorekorea/" target="_blank">
+                        <img src="images/footer_01.png" alt="아이콘01">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://ko-kr.facebook.com/benjaminmoore.kr/" target="_blank">
+                        <img src="images/footer_02.png" alt="아이콘02"></a>
+                </li>
+
+                <li>
+                    <a href="https://www.instagram.com/benjaminmoorekorea/?hl=ko" target="_blank">
+                        <img src="images/footer_03.png" alt="아이콘03">
+                    </a>
+                </li>
+            </ul>
+            <ul id="footer_menulist">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">개인정보취급방침</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">제휴안내</a></li>
+                <li><a href="#">이용안내</a></li>
+            </ul>
+            <div id="footer_info">
+                <p>상호명 : 벤자민무어페인트(주) | 대표 : 이명식 | 서울특별시 강남구 논현로 127길 22 (승욱프라자) | 사업자등록번호 : 214-87-06282</p>
+                <p>통신판매업신고 : 제2015- 서울강남-01302호 | 개인정보관리책임자 : 한명희 | 고객센터 : 1577-3103 | 팩스 : 02-3473-5055 | 메일 : bmpco@benjaminmoore.co.kr</p>
+                <p>Coryright &copy; 1998-2014 DAIHYUN M&amp;B All rights reserved.</p>
+            </div>
+
+            <!--푸터 top버튼-->
+
+            <div id="quick">
+                <p>TOP</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
