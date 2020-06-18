@@ -601,7 +601,6 @@ header #main_menu > li >ol >li >a:hover {
 
 .re_group {
     position: relative;
-    overflow: hidden;
 }
 
 /*hover 배경 생성 효과*/
