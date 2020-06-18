@@ -1,8 +1,6 @@
 $(function () {
 
     var hw = $("#header_wrap")
-    var logo = hw.find("img")
-    var nav_a = $("#main_menu").find("a")
     var sub = hw.find("ol")
     var toggle = $("#toggle_btn span")
     var moblie = $("#mobile_menu");
@@ -11,9 +9,7 @@ $(function () {
     //---------------------------------함수 선언 ---------------------------------
 
     function whiteHeader() { // 흰색 메뉴바 설정
-        $("#header_wrap").css({
-            'background': 'white'
-        });
+        $("#header_wrap").css({ 'background': 'white'});
         $("#header_wrap ul li>a").css('color', '#333');
         $("#logo a>img").attr("src", "images/nav_logo.png");
         toggle.css('background', '#4388c3');
@@ -22,14 +18,11 @@ $(function () {
 
 
     function blueHeader() { // 파란색 메뉴바 설정
-        $("#header_wrap").css({
-            'background': '#4388c3'
-        });
+        $("#header_wrap").css({ 'background': '#4388c3'});
         $("#header_wrap ul li>a").css('color', '#fff');
         $("#logo a>img").attr("src", "images/nav_logoW.png");
         toggle.css('background', '#fff');
         moblie.css({'background':'#4388c3'});
-
     }
 
     function fixed() { // 메뉴바 fix상태
@@ -57,14 +50,11 @@ $(function () {
             $("#mobile_menu").stop().animate({left:'100%'},1000,"easeOutCubic",function(){
                 $('#mobile_menu').css({'display':'none'});
             });
+            
             $("#toggle_btn span").removeClass('selected');
             $("#mobile_menu>ul>li").removeClass('selected');    
         }
- 
-        
     }
-
-
 
     //---------------------------------이벤트 시작 ---------------------------------
 
@@ -113,12 +103,5 @@ $(function () {
     
     $("#toggle_btn").on('click',moblieMenu);
     
-    
-    function inEvent(){
-        
-    }
-    
-
-
 
 });

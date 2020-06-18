@@ -1,8 +1,6 @@
  $(window).load(function () {
      // $(document).ready(function(){ })은 html문서 로딩 완료된 후, 바로 시작이므로 이미지 소스를 불러오고 난 후 실행되는  $(window).load(function()을 써야 resize할 때 적용됨
 
-
-
      var $mainWrap //div
      var $mainList //ul
      var $mainLi //li
@@ -36,26 +34,15 @@
      function mainReset() { //reset
          window_width = $(window).innerWidth();
          mainImgWidth = window_width;
-         $mainLi.css({
-             'width': mainImgWidth
-         });
-         $mainImg.css({
-             'width': mainImgWidth
-         });
-         $mainWrap.css({
-             'height': $mainImg.height()
-         });
-         $mainList.css({
-             'width': mainImgWidth * mainImgNum
-         });
-         $mainList.css({
-             "left": -mainImgWidth
-         });
+         $mainLi.css({ 'width': mainImgWidth });
+         $mainImg.css({ 'width': mainImgWidth });
+         $mainWrap.css({ 'height': $mainImg.height() });
+         $mainList.css({ 'width': mainImgWidth * mainImgNum });
+         $mainList.css({ "left": -mainImgWidth});
      }
 
 
      function inEvent() { //이벤트 함수
-
          $(window).on('resize', mainReset);
          btn.on('mouseenter mouseleave', btnEffect);
          btn.on('mouseenter', onStop);
@@ -77,10 +64,7 @@
          }, 500, "easeInCubic", function () {
 
              $mainList.children().first().appendTo($mainList);
-             $mainList.css({
-                 "left": -mainImgWidth
-             });
-
+             $mainList.css({ "left": -mainImgWidth});
          });
      }
 
@@ -92,9 +76,7 @@
          }, 500, "easeInCubic", function () {
 
              $mainList.children().last().prependTo($mainList);
-             $mainList.css({
-                 "left": -mainImgWidth
-             });
+             $mainList.css({"left": -mainImgWidth});
          });
      }
 

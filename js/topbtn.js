@@ -15,8 +15,6 @@ $(function(){
     $("#quick").click(function(){ //top버튼을 클릭했을 때 적용되는 애니메이션
         
         $('html,body').animate({'scrollTop':0},500,'easeInCubic');
-
     });
-    
     
 });

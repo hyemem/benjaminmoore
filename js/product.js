@@ -11,14 +11,11 @@ $(window).load(function () {
 
 
     //로드하자마자 실행할 함수
-
     init()
     productReset()
 
 
-
     function init() { //초기함수 설정
-
         $(window).on("resize", productReset);
         probtn.on('click', pro_prev);
         nextbtn.on('click', pro_next);
@@ -38,7 +35,6 @@ $(window).load(function () {
 
 
     function pro_prev(e) { //이전 버튼
-
         e.preventDefault(); //a링크 막아주는 것
         current_position = $product_list.position().left; //현재 위치 = ul의 position.left값
         $product_list.not(':animated').animate({
@@ -58,13 +54,11 @@ $(window).load(function () {
 
 
     function pro_next(e) { //다음 버튼
-
         e.preventDefault(); //a링크 막아주는 것
         current_position = $product_list.position().left; //현재 위치 = ul의 position.left값
         $product_list.not(':animated').animate({
             "left": current_position - li_width
         }, 1000, "easeOutExpo", function () {
-
             $product_list.children().first().appendTo($product_list)
             $product_list.css({
                 'left': -li_width
@@ -75,7 +69,4 @@ $(window).load(function () {
         //그리고 ul의 positon값을 초기화함
 
     }
-
-
-
 });
