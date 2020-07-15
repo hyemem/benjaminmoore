@@ -29,6 +29,8 @@
     #sub2_wrap{height: 330px;}
     #sub3_wrap{height: 400px;}
     #sub5_wrap #store_info>h1{margin-top: 20px;}
+    footer #quick{top: 600px;}
+    footer #quick p{font-size: 14px;}
 }
 
 
@@ -58,6 +60,7 @@
     #sub2_wrap{ height: 250px;}
     #sub3_wrap{height: 330px;}
     #footer_menulist{width: 100%;}
+    footer #quick p{font-size: 12px;}
 }
 
 
